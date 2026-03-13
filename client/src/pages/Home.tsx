@@ -5,41 +5,70 @@
  * - 中心焦點式排版
  * - 充足的負空間
  * - 點擊或按空白鍵換句
- * - Google AI 自動生成金句
+ * - Google AI 生成金句 + 靜態金句備用
  */
 
 import { useGoogleAIQuote } from '@/hooks/useGoogleAIQuote';
+import { useRandomQuote } from '@/hooks/useRandomQuote';
 import { QuoteCard } from '@/components/QuoteCard';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, AlertCircle } from 'lucide-react';
 import { Quote } from '@/lib/quotes';
 
 export default function Home() {
   const { generateQuote, isLoading: isGenerating, error: aiError } = useGoogleAIQuote();
+  const { quote: staticQuote, nextQuote: nextStaticQuote } = useRandomQuote();
   const [currentQuote, setCurrentQuote] = useState<Quote | null>(null);
   const [isInitializing, setIsInitializing] = useState(true);
+  const [useAI, setUseAI] = useState(true);
+  const [showFallback, setShowFallback] = useState(false);
 
-  // 初始化時生成第一則金句
+  // 初始化時嘗試生成 AI 金句，失敗則使用靜態金句
   useEffect(() => {
     const initializeQuote = async () => {
       setIsInitializing(true);
-      const quote = await generateQuote();
-      if (quote) {
-        setCurrentQuote(quote);
+      const aiQuote = await generateQuote();
+      if (aiQuote) {
+        setCurrentQuote(aiQuote);
+        setUseAI(true);
+        setShowFallback(false);
+      } else {
+        // AI 失敗，使用靜態金句
+        setCurrentQuote(staticQuote);
+        setUseAI(false);
+        setShowFallback(true);
       }
       setIsInitializing(false);
     };
 
     initializeQuote();
-  }, [generateQuote]);
+  }, [generateQuote, staticQuote]);
 
   const handleNextQuote = async () => {
-    const quote = await generateQuote();
-    if (quote) {
-      setCurrentQuote(quote);
+    if (useAI && !showFallback) {
+      // 嘗試使用 AI 生成
+      const aiQuote = await generateQuote();
+      if (aiQuote) {
+        setCurrentQuote(aiQuote);
+        setShowFallback(false);
+      } else {
+        // AI 失敗，切換到靜態金句
+        nextStaticQuote();
+        setShowFallback(true);
+      }
+    } else {
+      // 使用靜態金句
+      nextStaticQuote();
     }
   };
+
+  // 監聽靜態金句變化
+  useEffect(() => {
+    if (showFallback) {
+      setCurrentQuote(staticQuote);
+    }
+  }, [staticQuote, showFallback]);
 
   // 如果還在初始化或沒有金句，顯示載入狀態
   if (isInitializing || !currentQuote) {
@@ -97,20 +126,27 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
       >
-        <div className="flex items-center justify-center gap-2 text-sm text-lake-blue">
-          <Sparkles size={16} />
-          <span>使用 Google AI 生成金句</span>
-        </div>
+        {showFallback ? (
+          <div className="flex items-center justify-center gap-2 text-sm text-orange-600">
+            <AlertCircle size={16} />
+            <span>使用本地金句庫</span>
+          </div>
+        ) : (
+          <div className="flex items-center justify-center gap-2 text-sm text-lake-blue">
+            <Sparkles size={16} />
+            <span>使用 Google AI 生成金句</span>
+          </div>
+        )}
       </motion.div>
 
       {/* 錯誤提示 */}
-      {aiError && (
+      {aiError && !showFallback && (
         <motion.div
-          className="mt-4 px-4 py-2 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700"
+          className="mt-4 px-4 py-2 bg-orange-50 border border-orange-200 rounded-lg text-sm text-orange-700"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          ⚠️ {aiError}
+          ⚠️ AI 暫時無法使用，已切換到本地金句庫
         </motion.div>
       )}
 
