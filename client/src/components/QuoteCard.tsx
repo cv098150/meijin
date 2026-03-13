@@ -49,10 +49,10 @@ export function QuoteCard({ quote, isAnimating, onClick }: QuoteCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.button
+      <motion.div
         onClick={onClick}
-        disabled={isAnimating}
-        className="w-full p-12 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group disabled:cursor-not-allowed"
+        className="w-full p-12 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
+        style={{ pointerEvents: isAnimating ? 'none' : 'auto', opacity: isAnimating ? 0.7 : 1 }}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
@@ -126,7 +126,7 @@ export function QuoteCard({ quote, isAnimating, onClick }: QuoteCardProps) {
             點擊或按空白鍵獲取新金句
           </p>
         </motion.div>
-      </motion.button>
+      </motion.div>
     </motion.div>
   );
 }
