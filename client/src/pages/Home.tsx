@@ -5,10 +5,10 @@
  * - 中心焦點式排版
  * - 充足的負空間
  * - 點擊或按空白鍵換句
- * - Google AI 生成金句 + 靜態金句備用
+ * - Groq AI 生成金句 + 靜態金句備用
  */
 
-import { useGoogleAIQuote } from '@/hooks/useGoogleAIQuote';
+import { useGroqQuote } from '@/hooks/useGroqQuote';
 import { useRandomQuote } from '@/hooks/useRandomQuote';
 import { QuoteCard } from '@/components/QuoteCard';
 import { motion } from 'framer-motion';
@@ -17,7 +17,7 @@ import { Sparkles, AlertCircle } from 'lucide-react';
 import { Quote } from '@/lib/quotes';
 
 export default function Home() {
-  const { generateQuote, isLoading: isGenerating, error: aiError } = useGoogleAIQuote();
+  const { generateQuote, isLoading: isGenerating, error: aiError } = useGroqQuote();
   const { quote: staticQuote, nextQuote: nextStaticQuote } = useRandomQuote();
   const [currentQuote, setCurrentQuote] = useState<Quote | null>(null);
   const [isInitializing, setIsInitializing] = useState(true);
