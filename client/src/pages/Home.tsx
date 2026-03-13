@@ -5,75 +5,65 @@
  * - 中心焦點式排版
  * - 充足的負空間
  * - 點擊或按空白鍵換句
- * - AI 生成金句功能
+ * - Google AI 自動生成金句
  */
 
-import { useRandomQuote } from '@/hooks/useRandomQuote';
-import { useAIQuote } from '@/hooks/useAIQuote';
+import { useGoogleAIQuote } from '@/hooks/useGoogleAIQuote';
 import { QuoteCard } from '@/components/QuoteCard';
-import { APISettings } from '@/components/APISettings';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Settings, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { Quote } from '@/lib/quotes';
 
 export default function Home() {
-  const { quote, nextQuote, isAnimating } = useRandomQuote();
-  const { generateQuote, isLoading: isGenerating, error: aiError } = useAIQuote();
-  const [showSettings, setShowSettings] = useState(false);
-  const [currentQuote, setCurrentQuote] = useState<Quote>(quote);
-  const [useAI, setUseAI] = useState(false);
-  const [apiKey, setApiKey] = useState('');
-  const [provider, setProvider] = useState<'openai' | 'claude'>('openai');
+  const { generateQuote, isLoading: isGenerating, error: aiError } = useGoogleAIQuote();
+  const [currentQuote, setCurrentQuote] = useState<Quote | null>(null);
+  const [isInitializing, setIsInitializing] = useState(true);
 
-  // 初始化時檢查 localStorage 中的 API 金鑰
+  // 初始化時生成第一則金句
   useEffect(() => {
-    const savedOpenAIKey = localStorage.getItem('ai_openai_key');
-    const savedClaudeKey = localStorage.getItem('ai_claude_key');
-    if (savedOpenAIKey) {
-      setApiKey(savedOpenAIKey);
-      setProvider('openai');
-      setUseAI(true);
-    } else if (savedClaudeKey) {
-      setApiKey(savedClaudeKey);
-      setProvider('claude');
-      setUseAI(true);
-    }
-  }, []);
+    const initializeQuote = async () => {
+      setIsInitializing(true);
+      const quote = await generateQuote();
+      if (quote) {
+        setCurrentQuote(quote);
+      }
+      setIsInitializing(false);
+    };
 
-  // 監聽靜態金句的變化
-  useEffect(() => {
-    setCurrentQuote(quote);
-  }, [quote]);
+    initializeQuote();
+  }, [generateQuote]);
 
   const handleNextQuote = async () => {
-    if (useAI && apiKey) {
-      // 使用 AI 生成金句
-      const aiQuote = await generateQuote({
-        apiKey,
-        provider,
-      });
-      if (aiQuote) {
-        setCurrentQuote(aiQuote);
-      }
-    } else {
-      // 使用靜態金句
-      nextQuote();
+    const quote = await generateQuote();
+    if (quote) {
+      setCurrentQuote(quote);
     }
   };
 
-  const handleSaveSettings = (newProvider: 'openai' | 'claude', newApiKey: string) => {
-    setProvider(newProvider);
-    setApiKey(newApiKey);
-    setUseAI(true);
-  };
-
-  const handleClearSettings = () => {
-    localStorage.removeItem('ai_openai_key');
-    localStorage.removeItem('ai_claude_key');
-    setApiKey('');
-    setUseAI(false);
-  };
+  // 如果還在初始化或沒有金句，顯示載入狀態
+  if (isInitializing || !currentQuote) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 py-8">
+        <div className="fixed inset-0 -z-10 bg-gradient-to-br from-white via-white to-blue-50 opacity-50" />
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+            >
+              <Sparkles size={32} className="text-lake-blue" />
+            </motion.div>
+          </div>
+          <p className="text-gray-600">正在生成今日金句...</p>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 py-8">
@@ -96,25 +86,24 @@ export default function Home() {
       {/* 金句卡片 */}
       <QuoteCard
         quote={currentQuote}
-        isAnimating={isAnimating || isGenerating}
+        isAnimating={isGenerating}
         onClick={handleNextQuote}
       />
 
-      {/* AI 狀態與錯誤提示 */}
-      {useAI && (
-        <motion.div
-          className="mt-8 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          <div className="flex items-center justify-center gap-2 text-sm text-lake-blue">
-            <Sparkles size={16} />
-            <span>使用 {provider === 'openai' ? 'OpenAI' : 'Claude'} AI 生成金句</span>
-          </div>
-        </motion.div>
-      )}
+      {/* AI 狀態提示 */}
+      <motion.div
+        className="mt-8 text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+      >
+        <div className="flex items-center justify-center gap-2 text-sm text-lake-blue">
+          <Sparkles size={16} />
+          <span>使用 Google AI 生成金句</span>
+        </div>
+      </motion.div>
 
+      {/* 錯誤提示 */}
       {aiError && (
         <motion.div
           className="mt-4 px-4 py-2 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700"
@@ -125,9 +114,9 @@ export default function Home() {
         </motion.div>
       )}
 
-      {/* 底部提示與設定按鈕 */}
+      {/* 底部提示 */}
       <motion.div
-        className="mt-12 text-center flex flex-col items-center gap-4"
+        className="mt-12 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ delay: 1, duration: 0.5 }}
@@ -135,36 +124,7 @@ export default function Home() {
         <p className="text-xs md:text-sm text-gray-500">
           💡 點擊卡片或按空白鍵獲取新金句
         </p>
-
-        {/* 設定按鈕 */}
-        <motion.button
-          onClick={() => setShowSettings(true)}
-          className="flex items-center gap-2 px-4 py-2 text-sm text-gray-600 hover:text-lake-blue hover:bg-blue-50 rounded-lg transition-colors"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Settings size={16} />
-          {useAI ? 'AI 設定' : '啟用 AI 生成'}
-        </motion.button>
-
-        {/* 清除 AI 設定按鈕 */}
-        {useAI && (
-          <motion.button
-            onClick={handleClearSettings}
-            className="text-xs text-gray-500 hover:text-red-500 transition-colors"
-            whileHover={{ scale: 1.05 }}
-          >
-            切換回靜態金句
-          </motion.button>
-        )}
       </motion.div>
-
-      {/* API 設定對話框 */}
-      <APISettings
-        isOpen={showSettings}
-        onClose={() => setShowSettings(false)}
-        onSave={handleSaveSettings}
-      />
     </div>
   );
 }
