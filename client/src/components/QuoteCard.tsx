@@ -6,11 +6,14 @@
  * - 輕微陰影與圓角
  * - 淡入淡出動畫
  * - 點擊與懸停反饋
+ * - 複製金句功能
  */
 
 import { Quote } from '@/lib/quotes';
 import { CategoryBadge } from './CategoryBadge';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { Copy, Check } from 'lucide-react';
 
 interface QuoteCardProps {
   quote: Quote;
@@ -19,6 +22,26 @@ interface QuoteCardProps {
 }
 
 export function QuoteCard({ quote, isAnimating, onClick }: QuoteCardProps) {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    
+    // 組合複製文本：金句 + 解釋（如有）
+    let textToCopy = quote.text;
+    if (quote.explanation) {
+      textToCopy += `\n\n${quote.explanation}`;
+      if (quote.author) {
+        textToCopy += `\n— ${quote.author}`;
+      }
+    }
+    
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    });
+  };
+
   return (
     <motion.div
       className="w-full max-w-2xl mx-auto"
@@ -71,14 +94,37 @@ export function QuoteCard({ quote, isAnimating, onClick }: QuoteCardProps) {
           </motion.div>
         )}
 
-        {/* 互動提示 */}
+        {/* 複製按鈕與互動提示 */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}
+          animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="mt-8 text-xs text-gray-500 group-hover:text-gray-400 transition-colors"
+          className="mt-8 flex flex-col items-center gap-4"
         >
-          點擊或按空白鍵獲取新金句
+          {/* 複製按鈕 */}
+          <motion.button
+            onClick={handleCopy}
+            className="flex items-center gap-2 px-4 py-2 bg-lake-blue text-white rounded-lg hover:bg-opacity-90 transition-all duration-200 text-sm font-medium"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {isCopied ? (
+              <>
+                <Check size={16} />
+                已複製
+              </>
+            ) : (
+              <>
+                <Copy size={16} />
+                複製金句
+              </>
+            )}
+          </motion.button>
+
+          {/* 互動提示 */}
+          <p className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+            點擊或按空白鍵獲取新金句
+          </p>
         </motion.div>
       </motion.button>
     </motion.div>
