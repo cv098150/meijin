@@ -8,7 +8,7 @@ import { useState, useCallback } from 'react';
 import { Quote, QuoteCategory } from '@/lib/quotes';
 
 // Google API 金鑰（已嵌入）
-const GOOGLE_API_KEY = 'AIzaSyDYh3q3l8gwY9IJ70inolHBLUu7eYONi5s';
+const GOOGLE_API_KEY = 'AIzaSyBfAumk8Rf99Wz9UWooq73bA2uUEPpnAtU';
 const GOOGLE_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent';
 
 export function useGoogleAIQuote() {
