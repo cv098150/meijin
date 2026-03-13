@@ -9,7 +9,7 @@ import { Quote, QuoteCategory } from '@/lib/quotes';
 
 // Google API 金鑰（已嵌入）
 const GOOGLE_API_KEY = 'AIzaSyDYh3q3l8gwY9IJ70inolHBLUu7eYONi5s';
-const GOOGLE_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+const GOOGLE_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent';
 
 export function useGoogleAIQuote() {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,7 +39,7 @@ export function useGoogleAIQuote() {
 只返回 JSON，不要其他文字。`;
 
         const response = await fetch(
-          `${GOOGLE_API_URL}?key=${GOOGLE_API_KEY}`,
+          `${GOOGLE_API_URL.replace(':generateContent', '')}:generateContent?key=${GOOGLE_API_KEY}`,
           {
             method: 'POST',
             headers: {
