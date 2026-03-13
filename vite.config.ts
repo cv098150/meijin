@@ -82,13 +82,15 @@ function vitePluginManusDebugCollector(): Plugin {
       if (process.env.NODE_ENV === "production") {
         return html;
       }
+      // 在開發環境中，base 路徑是 /meijin/
+      const basePath = '/meijin/';
       return {
         html,
         tags: [
           {
             tag: "script",
             attrs: {
-              src: "/__manus__/debug-collector.js",
+              src: basePath + "__manus__/debug-collector.js",
               defer: true,
             },
             injectTo: "head",
