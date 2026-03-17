@@ -1,14 +1,11 @@
-/**
+/*
  * 每金 - 金句資料庫主索引
  */
 
 import { humorQuotes } from './quotes_humor';
 import { seriousQuotes } from './quotes_serious';
-import { lunyuQuotes } from './quotes_lunyu';
-import { zhuangziQuotes } from './quotes_zhuangzi';
-import { laoziQuotes } from './quotes_laozi';
 
-export type QuoteCategory = 'humor' | 'serious' | 'lunyu' | 'zhuangzi' | 'laozi';
+export type QuoteCategory = 'humor' | 'serious';
 
 export interface Quote {
   id: number;
@@ -21,9 +18,6 @@ export interface Quote {
 export const quotes = [
   ...humorQuotes,
   ...seriousQuotes,
-  ...lunyuQuotes,
-  ...zhuangziQuotes,
-  ...laoziQuotes,
 ];
 
 export function getRandomQuote(): Quote {
