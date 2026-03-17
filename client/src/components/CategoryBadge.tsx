@@ -15,9 +15,6 @@ interface CategoryBadgeProps {
 const categoryNames: Record<QuoteCategory, string> = {
   humor: '幽默',
   serious: '正經',
-  lunyu: '論語',
-  zhuangzi: '莊子',
-  laozi: '老子',
 };
 
 export function CategoryBadge({ category }: CategoryBadgeProps) {
