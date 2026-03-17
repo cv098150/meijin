@@ -2513,4 +2513,1504 @@ export const humorQuotes: Quote[] = [
     text: '別人的未來，我的夢。',
     category: 'humor',
   },
+  {
+    id: 501,
+    text: '那些殺不死我的，拜託你殺認真點',
+    category: 'humor',
+  },
+  {
+    id: 502,
+    text: '人如果沒有夢想，那和無憂無慮有什麼分別呢',
+    category: 'humor',
+  },
+  {
+    id: 503,
+    text: '能者多勞，那你能吧，我不能我要下班',
+    category: 'humor',
+  },
+  {
+    id: 504,
+    text: '退一萬步來講，我根本聽不到你在講什麼',
+    category: 'humor',
+  },
+  {
+    id: 505,
+    text: '強者從來不抱怨環境，但我是弱者，我抱怨環境也抱怨強者',
+    category: 'humor',
+  },
+  {
+    id: 506,
+    text: '如果生活把你的門關上了，那你就再把它打開。這就是門，門就是這樣用的',
+    category: 'humor',
+  },
+  {
+    id: 507,
+    text: '靠臉吃飯不長久，靠不要臉吃飯天長地久',
+    category: 'humor',
+  },
+  {
+    id: 508,
+    text: '如果上帝關了你的門，還把窗戶鎖上，那就代表他要開冷氣了',
+    category: 'humor',
+  },
+  {
+    id: 509,
+    text: '只要我是一坨屎，就沒人敢踩我頭上',
+    category: 'humor',
+  },
+  {
+    id: 510,
+    text: '生活給了我一拳，我出布',
+    category: 'humor',
+  },
+  {
+    id: 511,
+    text: '狼若回頭，不是報恩就是報仇，我若回頭，不是迷路就是過頭',
+    category: 'humor',
+  },
+  {
+    id: 512,
+    text: '愛笑的人運氣都不會太差，因為運氣差的都笑不出來',
+    category: 'humor',
+  },
+  {
+    id: 513,
+    text: '如果你惹毛我了，我就毛絨絨的走開',
+    category: 'humor',
+  },
+  {
+    id: 514,
+    text: '退一萬步來講，你今天走了一萬步',
+    category: 'humor',
+  },
+  {
+    id: 515,
+    text: '不要觸碰我的底線，不然我又要再畫一條',
+    category: 'humor',
+  },
+  {
+    id: 516,
+    text: '幹我們這行最忌諱的就是幹我們這行',
+    category: 'humor',
+  },
+  {
+    id: 517,
+    text: '休息是因為走不了更長遠的路',
+    category: 'humor',
+  },
+  {
+    id: 518,
+    text: '蹲得越低，腳越麻',
+    category: 'humor',
+  },
+  {
+    id: 519,
+    text: '明知山有虎，別去明知山',
+    category: 'humor',
+  },
+  {
+    id: 520,
+    text: '希望你能走出舒適圈，因為我要進去',
+    category: 'humor',
+  },
+  {
+    id: 521,
+    text: '我已經不是當初那個懵懂無知的少女了，我現在是懵懂無知的中年婦女',
+    category: 'humor',
+  },
+  {
+    id: 522,
+    text: '快樂是一天，不快樂也是一天，你就這樣過了兩天',
+    category: 'humor',
+  },
+  {
+    id: 523,
+    text: '作為一個過來人，我給您一個忠告：不要過來',
+    category: 'humor',
+  },
+  {
+    id: 524,
+    text: '我們不能隨便生氣。生氣的時候，你會使出真本領。這樣，別人就會知道你的真本領很爛',
+    category: 'humor',
+  },
+  {
+    id: 525,
+    text: '要謝的人太多了，那就謝天吧，要改的東西太多了，那就改天吧',
+    category: 'humor',
+  },
+  {
+    id: 526,
+    text: '我不是沒有夢想，我的夢想就是沒有夢想',
+    category: 'humor',
+  },
+  {
+    id: 527,
+    text: '成功的人都有一個共同點，那就是他們都成功了',
+    category: 'humor',
+  },
+  {
+    id: 528,
+    text: '失敗乃成功之母，那成功是什麼？是孤兒',
+    category: 'humor',
+  },
+  {
+    id: 529,
+    text: '天才是百分之一的靈感加百分之九十九的汗水，我是百分之百的放棄',
+    category: 'humor',
+  },
+  {
+    id: 530,
+    text: '堅持就是勝利，放棄也是一種堅持',
+    category: 'humor',
+  },
+  {
+    id: 531,
+    text: '我不怕失敗，我怕的是失敗後還要起來',
+    category: 'humor',
+  },
+  {
+    id: 532,
+    text: '別人的人生如開掛，我的人生是開玩笑',
+    category: 'humor',
+  },
+  {
+    id: 533,
+    text: '我的人生沒有高潮，只有尷尬症',
+    category: 'humor',
+  },
+  {
+    id: 534,
+    text: '人生就像一場馬拉松，我連起點都沒找到',
+    category: 'humor',
+  },
+  {
+    id: 535,
+    text: '我不是懶，我只是在醞釀能量',
+    category: 'humor',
+  },
+  {
+    id: 536,
+    text: '我不是胖，我只是被幸福壓彎了',
+    category: 'humor',
+  },
+  {
+    id: 537,
+    text: '我不是醜，我只是審美超前',
+    category: 'humor',
+  },
+  {
+    id: 538,
+    text: '我不是窮，我只是缺錢',
+    category: 'humor',
+  },
+  {
+    id: 539,
+    text: '我不是失敗，我只是在走另一條路',
+    category: 'humor',
+  },
+  {
+    id: 540,
+    text: '我不是逃避，我只是在尋找方向',
+    category: 'humor',
+  },
+  {
+    id: 541,
+    text: '我不是放棄，我只是改變了目標',
+    category: 'humor',
+  },
+  {
+    id: 542,
+    text: '我不是懦弱，我只是在積蓄力量',
+    category: 'humor',
+  },
+  {
+    id: 543,
+    text: '我不是孤獨，我只是在享受獨處',
+    category: 'humor',
+  },
+  {
+    id: 544,
+    text: '我不是無聊，我只是在思考人生',
+    category: 'humor',
+  },
+  {
+    id: 545,
+    text: '我不是沉默，我只是在聽別人說話',
+    category: 'humor',
+  },
+  {
+    id: 546,
+    text: '我不是冷淡，我只是在保護自己',
+    category: 'humor',
+  },
+  {
+    id: 547,
+    text: '我不是自私，我只是在照顧自己',
+    category: 'humor',
+  },
+  {
+    id: 548,
+    text: '我不是任性，我只是在堅持原則',
+    category: 'humor',
+  },
+  {
+    id: 549,
+    text: '我不是固執，我只是有信念',
+    category: 'humor',
+  },
+  {
+    id: 550,
+    text: '我不是傲慢，我只是有自信',
+    category: 'humor',
+  },
+  {
+    id: 551,
+    text: '我不是自大，我只是了解自己',
+    category: 'humor',
+  },
+  {
+    id: 552,
+    text: '我不是狂妄，我只是有夢想',
+    category: 'humor',
+  },
+  {
+    id: 553,
+    text: '我不是瘋狂，我只是與眾不同',
+    category: 'humor',
+  },
+  {
+    id: 554,
+    text: '我不是怪異，我只是獨特',
+    category: 'humor',
+  },
+  {
+    id: 555,
+    text: '我不是古怪，我只是有個性',
+    category: 'humor',
+  },
+  {
+    id: 556,
+    text: '我不是奇怪，我只是不合群',
+    category: 'humor',
+  },
+  {
+    id: 557,
+    text: '我不是詭異，我只是神秘',
+    category: 'humor',
+  },
+  {
+    id: 558,
+    text: '我不是詭計多端，我只是聰明',
+    category: 'humor',
+  },
+  {
+    id: 559,
+    text: '我不是狡猾，我只是聰慧',
+    category: 'humor',
+  },
+  {
+    id: 560,
+    text: '我不是奸詐，我只是精明',
+    category: 'humor',
+  },
+  {
+    id: 561,
+    text: '我不是虛偽，我只是懂禮貌',
+    category: 'humor',
+  },
+  {
+    id: 562,
+    text: '我不是虛假，我只是會表演',
+    category: 'humor',
+  },
+  {
+    id: 563,
+    text: '我不是做作，我只是在演戲',
+    category: 'humor',
+  },
+  {
+    id: 564,
+    text: '我不是矯情，我只是有感受',
+    category: 'humor',
+  },
+  {
+    id: 565,
+    text: '我不是裝作，我只是在假裝',
+    category: 'humor',
+  },
+  {
+    id: 566,
+    text: '我不是偽裝，我只是在隱藏',
+    category: 'humor',
+  },
+  {
+    id: 567,
+    text: '我不是隱瞞，我只是在保密',
+    category: 'humor',
+  },
+  {
+    id: 568,
+    text: '我不是欺騙，我只是在說謊',
+    category: 'humor',
+  },
+  {
+    id: 569,
+    text: '我不是謊言，我只是在編故事',
+    category: 'humor',
+  },
+  {
+    id: 570,
+    text: '我不是胡說，我只是在瞎掰',
+    category: 'humor',
+  },
+  {
+    id: 571,
+    text: '我不是亂說，我只是在廢話',
+    category: 'humor',
+  },
+  {
+    id: 572,
+    text: '我不是廢話，我只是在浪費時間',
+    category: 'humor',
+  },
+  {
+    id: 573,
+    text: '我不是浪費時間，我只是在打發時間',
+    category: 'humor',
+  },
+  {
+    id: 574,
+    text: '我不是打發時間，我只是在消磨時光',
+    category: 'humor',
+  },
+  {
+    id: 575,
+    text: '我不是消磨時光，我只是在等待',
+    category: 'humor',
+  },
+  {
+    id: 576,
+    text: '我不是等待，我只是在觀望',
+    category: 'humor',
+  },
+  {
+    id: 577,
+    text: '我不是觀望，我只是在旁觀',
+    category: 'humor',
+  },
+  {
+    id: 578,
+    text: '我不是旁觀，我只是在看戲',
+    category: 'humor',
+  },
+  {
+    id: 579,
+    text: '我不是看戲，我只是在湊熱鬧',
+    category: 'humor',
+  },
+  {
+    id: 580,
+    text: '我不是湊熱鬧，我只是在參與',
+    category: 'humor',
+  },
+  {
+    id: 581,
+    text: '我不是參與，我只是在加入',
+    category: 'humor',
+  },
+  {
+    id: 582,
+    text: '我不是加入，我只是在跟風',
+    category: 'humor',
+  },
+  {
+    id: 583,
+    text: '我不是跟風，我只是在隨大流',
+    category: 'humor',
+  },
+  {
+    id: 584,
+    text: '我不是隨大流，我只是在從眾',
+    category: 'humor',
+  },
+  {
+    id: 585,
+    text: '我不是從眾，我只是在和諧',
+    category: 'humor',
+  },
+  {
+    id: 586,
+    text: '我不是和諧，我只是在妥協',
+    category: 'humor',
+  },
+  {
+    id: 587,
+    text: '我不是妥協，我只是在讓步',
+    category: 'humor',
+  },
+  {
+    id: 588,
+    text: '我不是讓步，我只是在退縮',
+    category: 'humor',
+  },
+  {
+    id: 589,
+    text: '我不是退縮，我只是在躲避',
+    category: 'humor',
+  },
+  {
+    id: 590,
+    text: '我不是躲避，我只是在逃避',
+    category: 'humor',
+  },
+  {
+    id: 591,
+    text: '我不是逃避，我只是在逃亡',
+    category: 'humor',
+  },
+  {
+    id: 592,
+    text: '我不是逃亡，我只是在流亡',
+    category: 'humor',
+  },
+  {
+    id: 593,
+    text: '我不是流亡，我只是在漂泊',
+    category: 'humor',
+  },
+  {
+    id: 594,
+    text: '我不是漂泊，我只是在流浪',
+    category: 'humor',
+  },
+  {
+    id: 595,
+    text: '我不是流浪，我只是在遊蕩',
+    category: 'humor',
+  },
+  {
+    id: 596,
+    text: '我不是遊蕩，我只是在閒逛',
+    category: 'humor',
+  },
+  {
+    id: 597,
+    text: '我不是閒逛，我只是在散步',
+    category: 'humor',
+  },
+  {
+    id: 598,
+    text: '我不是散步，我只是在走路',
+    category: 'humor',
+  },
+  {
+    id: 599,
+    text: '我不是走路，我只是在移動',
+    category: 'humor',
+  },
+  {
+    id: 600,
+    text: '人生最大的謊言就是我明天開始努力',
+    category: 'humor',
+  },
+  {
+    id: 601,
+    text: '我不是不想工作，我只是在等待靈感',
+    category: 'humor',
+  },
+  {
+    id: 602,
+    text: '錢不是萬能的，但沒有錢是萬萬不能的',
+    category: 'humor',
+  },
+  {
+    id: 603,
+    text: '我的理想就是沒有理想',
+    category: 'humor',
+  },
+  {
+    id: 604,
+    text: '我的目標就是沒有目標',
+    category: 'humor',
+  },
+  {
+    id: 605,
+    text: '我的計畫就是沒有計畫',
+    category: 'humor',
+  },
+  {
+    id: 606,
+    text: '我的夢想就是能睡個好覺',
+    category: 'humor',
+  },
+  {
+    id: 607,
+    text: '我的願望就是不要有願望',
+    category: 'humor',
+  },
+  {
+    id: 608,
+    text: '我的期望就是不要有期望',
+    category: 'humor',
+  },
+  {
+    id: 609,
+    text: '我的希望就是不要有希望',
+    category: 'humor',
+  },
+  {
+    id: 610,
+    text: '我的信念就是沒有信念',
+    category: 'humor',
+  },
+  {
+    id: 611,
+    text: '我的信仰就是沒有信仰',
+    category: 'humor',
+  },
+  {
+    id: 612,
+    text: '我的宗教就是睡眠',
+    category: 'humor',
+  },
+  {
+    id: 613,
+    text: '我的信徒就是我自己',
+    category: 'humor',
+  },
+  {
+    id: 614,
+    text: '我的教義就是及時行樂',
+    category: 'humor',
+  },
+  {
+    id: 615,
+    text: '我的聖經就是手機',
+    category: 'humor',
+  },
+  {
+    id: 616,
+    text: '我的天堂就是床',
+    category: 'humor',
+  },
+  {
+    id: 617,
+    text: '我的地獄就是上班',
+    category: 'humor',
+  },
+  {
+    id: 618,
+    text: '我的煉獄就是開會',
+    category: 'humor',
+  },
+  {
+    id: 619,
+    text: '我的天使就是存款',
+    category: 'humor',
+  },
+  {
+    id: 620,
+    text: '我的魔鬼就是老闆',
+    category: 'humor',
+  },
+  {
+    id: 621,
+    text: '我的救世主就是假期',
+    category: 'humor',
+  },
+  {
+    id: 622,
+    text: '我的終極目標就是退休',
+    category: 'humor',
+  },
+  {
+    id: 623,
+    text: '我的人生意義就是活著',
+    category: 'humor',
+  },
+  {
+    id: 624,
+    text: '我的存在價值就是吃飯',
+    category: 'humor',
+  },
+  {
+    id: 625,
+    text: '我的生存理由就是睡覺',
+    category: 'humor',
+  },
+  {
+    id: 626,
+    text: '我的活著目的就是玩樂',
+    category: 'humor',
+  },
+  {
+    id: 627,
+    text: '我的生活方式就是混日子',
+    category: 'humor',
+  },
+  {
+    id: 628,
+    text: '我的人生哲學就是隨遇而安',
+    category: 'humor',
+  },
+  {
+    id: 629,
+    text: '我的人生態度就是得過且過',
+    category: 'humor',
+  },
+  {
+    id: 630,
+    text: '我的人生信條就是及時行樂',
+    category: 'humor',
+  },
+  {
+    id: 631,
+    text: '我的人生格言就是活著就好',
+    category: 'humor',
+  },
+  {
+    id: 632,
+    text: '我的人生座右銘就是不要想太多',
+    category: 'humor',
+  },
+  {
+    id: 633,
+    text: '我的人生箴言就是開心最重要',
+    category: 'humor',
+  },
+  {
+    id: 634,
+    text: '我的人生寶典就是吃喝玩樂',
+    category: 'humor',
+  },
+  {
+    id: 635,
+    text: '我的人生秘訣就是不要太認真',
+    category: 'humor',
+  },
+  {
+    id: 636,
+    text: '我的人生竅門就是放鬆心態',
+    category: 'humor',
+  },
+  {
+    id: 637,
+    text: '我的人生妙招就是順其自然',
+    category: 'humor',
+  },
+  {
+    id: 638,
+    text: '我的人生絕招就是假裝沒看到',
+    category: 'humor',
+  },
+  {
+    id: 639,
+    text: '我的人生必殺技就是裝作沒聽見',
+    category: 'humor',
+  },
+  {
+    id: 640,
+    text: '我的人生大法就是視而不見',
+    category: 'humor',
+  },
+  {
+    id: 641,
+    text: '我的人生秘法就是聽而不聞',
+    category: 'humor',
+  },
+  {
+    id: 642,
+    text: '我的人生奧義就是裝傻充愣',
+    category: 'humor',
+  },
+  {
+    id: 643,
+    text: '我的人生真諦就是裝作無知',
+    category: 'humor',
+  },
+  {
+    id: 644,
+    text: '我的人生本質就是混吃等死',
+    category: 'humor',
+  },
+  {
+    id: 645,
+    text: '我的人生真相就是浪費時間',
+    category: 'humor',
+  },
+  {
+    id: 646,
+    text: '我的人生真實就是無所事事',
+    category: 'humor',
+  },
+  {
+    id: 647,
+    text: '我的人生現實就是碌碌無為',
+    category: 'humor',
+  },
+  {
+    id: 648,
+    text: '我的人生實況就是一事無成',
+    category: 'humor',
+  },
+  {
+    id: 649,
+    text: '我的人生直播就是平凡無奇',
+    category: 'humor',
+  },
+  {
+    id: 650,
+    text: '我的人生紀錄片就是無聊至極',
+    category: 'humor',
+  },
+  {
+    id: 651,
+    text: '我的人生電影就是悲劇大片',
+    category: 'humor',
+  },
+  {
+    id: 652,
+    text: '我的人生電視劇就是狗血連續劇',
+    category: 'humor',
+  },
+  {
+    id: 653,
+    text: '我的人生小說就是爛尾文',
+    category: 'humor',
+  },
+  {
+    id: 654,
+    text: '我的人生故事就是沒有故事',
+    category: 'humor',
+  },
+  {
+    id: 655,
+    text: '我的人生傳記就是平凡傳',
+    category: 'humor',
+  },
+  {
+    id: 656,
+    text: '我的人生列傳就是無名傳',
+    category: 'humor',
+  },
+  {
+    id: 657,
+    text: '我的人生史詩就是悲歌',
+    category: 'humor',
+  },
+  {
+    id: 658,
+    text: '我的人生樂章就是悲鳴',
+    category: 'humor',
+  },
+  {
+    id: 659,
+    text: '我的人生旋律就是哀樂',
+    category: 'humor',
+  },
+  {
+    id: 660,
+    text: '我的人生節奏就是慢板',
+    category: 'humor',
+  },
+  {
+    id: 661,
+    text: '我的人生速度就是靜止',
+    category: 'humor',
+  },
+  {
+    id: 662,
+    text: '我的人生進度就是0%',
+    category: 'humor',
+  },
+  {
+    id: 663,
+    text: '我的人生完成度就是負數',
+    category: 'humor',
+  },
+  {
+    id: 664,
+    text: '我的人生滿意度就是負無窮',
+    category: 'humor',
+  },
+  {
+    id: 665,
+    text: '我的人生幸福度就是-999',
+    category: 'humor',
+  },
+  {
+    id: 666,
+    text: '我的人生成就感就是沒有',
+    category: 'humor',
+  },
+  {
+    id: 667,
+    text: '我的人生獲得感就是失落感',
+    category: 'humor',
+  },
+  {
+    id: 668,
+    text: '我的人生安全感就是不安全感',
+    category: 'humor',
+  },
+  {
+    id: 669,
+    text: '我的人生歸屬感就是陌生感',
+    category: 'humor',
+  },
+  {
+    id: 670,
+    text: '我的人生認同感就是否定感',
+    category: 'humor',
+  },
+  {
+    id: 671,
+    text: '我的人生確定感就是迷茫感',
+    category: 'humor',
+  },
+  {
+    id: 672,
+    text: '我的人生方向感就是迷路感',
+    category: 'humor',
+  },
+  {
+    id: 673,
+    text: '我的人生存在感就是虛無感',
+    category: 'humor',
+  },
+  {
+    id: 674,
+    text: '我的人生現實感就是做夢感',
+    category: 'humor',
+  },
+  {
+    id: 675,
+    text: '我的人生真實感就是虛幻感',
+    category: 'humor',
+  },
+  {
+    id: 676,
+    text: '我的人生代入感就是局外人感',
+    category: 'humor',
+  },
+  {
+    id: 677,
+    text: '我的人生沉浸感就是格格不入感',
+    category: 'humor',
+  },
+  {
+    id: 678,
+    text: '我的人生融入感就是被排斥感',
+    category: 'humor',
+  },
+  {
+    id: 679,
+    text: '我的人生融合感就是被孤立感',
+    category: 'humor',
+  },
+  {
+    id: 680,
+    text: '我的人生和諧感就是衝突感',
+    category: 'humor',
+  },
+  {
+    id: 681,
+    text: '我的人生平衡感就是失衡感',
+    category: 'humor',
+  },
+  {
+    id: 682,
+    text: '我的人生穩定感就是動盪感',
+    category: 'humor',
+  },
+  {
+    id: 683,
+    text: '我的人生安定感就是不安感',
+    category: 'humor',
+  },
+  {
+    id: 684,
+    text: '我的人生踏實感就是虛浮感',
+    category: 'humor',
+  },
+  {
+    id: 685,
+    text: '我的人生堅實感就是虛弱感',
+    category: 'humor',
+  },
+  {
+    id: 686,
+    text: '我的人生牢固感就是脆弱感',
+    category: 'humor',
+  },
+  {
+    id: 687,
+    text: '我的人生穩固感就是搖搖欲墜感',
+    category: 'humor',
+  },
+  {
+    id: 688,
+    text: '我的人生堅固感就是岌岌可危感',
+    category: 'humor',
+  },
+  {
+    id: 689,
+    text: '我的人生永恆感就是短暫感',
+    category: 'humor',
+  },
+  {
+    id: 690,
+    text: '我的人生持久感就是轉瞬即逝感',
+    category: 'humor',
+  },
+  {
+    id: 691,
+    text: '我的人生長久感就是稍縱即逝感',
+    category: 'humor',
+  },
+  {
+    id: 692,
+    text: '我的人生永遠感就是一瞬間感',
+    category: 'humor',
+  },
+  {
+    id: 693,
+    text: '我的人生無限感就是有限感',
+    category: 'humor',
+  },
+  {
+    id: 694,
+    text: '我的人生無盡感就是有盡感',
+    category: 'humor',
+  },
+  {
+    id: 695,
+    text: '我的人生無窮感就是有窮感',
+    category: 'humor',
+  },
+  {
+    id: 696,
+    text: '我的人生無邊感就是有邊感',
+    category: 'humor',
+  },
+  {
+    id: 697,
+    text: '我的人生無際感就是有際感',
+    category: 'humor',
+  },
+  {
+    id: 698,
+    text: '我的人生無限制感就是受限感',
+    category: 'humor',
+  },
+  {
+    id: 699,
+    text: '我的人生自由感就是被束縛感',
+    category: 'humor',
+  },
+  {
+    id: 700,
+    text: '我的人生解放感就是被禁錮感',
+    category: 'humor',
+  },
+  {
+    id: 701,
+    text: '我的人生釋放感就是被囚禁感',
+    category: 'humor',
+  },
+  {
+    id: 702,
+    text: '我的人生放鬆感就是緊張感',
+    category: 'humor',
+  },
+  {
+    id: 703,
+    text: '我的人生舒適感就是不適感',
+    category: 'humor',
+  },
+  {
+    id: 704,
+    text: '我的人生愉快感就是痛苦感',
+    category: 'humor',
+  },
+  {
+    id: 705,
+    text: '我的人生快樂感就是悲傷感',
+    category: 'humor',
+  },
+  {
+    id: 706,
+    text: '我的人生歡樂感就是憂鬱感',
+    category: 'humor',
+  },
+  {
+    id: 707,
+    text: '我的人生喜悅感就是沮喪感',
+    category: 'humor',
+  },
+  {
+    id: 708,
+    text: '我的人生興奮感就是乏味感',
+    category: 'humor',
+  },
+  {
+    id: 709,
+    text: '我的人生刺激感就是平淡感',
+    category: 'humor',
+  },
+  {
+    id: 710,
+    text: '我的人生驚喜感就是失望感',
+    category: 'humor',
+  },
+  {
+    id: 711,
+    text: '我的人生驚奇感就是平凡感',
+    category: 'humor',
+  },
+  {
+    id: 712,
+    text: '我的人生奇妙感就是乏味感',
+    category: 'humor',
+  },
+  {
+    id: 713,
+    text: '我的人生神奇感就是平庸感',
+    category: 'humor',
+  },
+  {
+    id: 714,
+    text: '我的人生奇異感就是普通感',
+    category: 'humor',
+  },
+  {
+    id: 715,
+    text: '我的人生新奇感就是陳舊感',
+    category: 'humor',
+  },
+  {
+    id: 716,
+    text: '我的人生新鮮感就是老套感',
+    category: 'humor',
+  },
+  {
+    id: 717,
+    text: '我的人生新穎感就是過時感',
+    category: 'humor',
+  },
+  {
+    id: 718,
+    text: '我的人生創新感就是守舊感',
+    category: 'humor',
+  },
+  {
+    id: 719,
+    text: '我的人生突破感就是停滯感',
+    category: 'humor',
+  },
+  {
+    id: 720,
+    text: '我的人生進展感就是原地踏步感',
+    category: 'humor',
+  },
+  {
+    id: 721,
+    text: '我的人生前進感就是後退感',
+    category: 'humor',
+  },
+  {
+    id: 722,
+    text: '我的人生上升感就是下降感',
+    category: 'humor',
+  },
+  {
+    id: 723,
+    text: '我的人生高升感就是跌落感',
+    category: 'humor',
+  },
+  {
+    id: 724,
+    text: '我的人生飆升感就是暴跌感',
+    category: 'humor',
+  },
+  {
+    id: 725,
+    text: '我的人生躍升感就是墜落感',
+    category: 'humor',
+  },
+  {
+    id: 726,
+    text: '我的人生騰飛感就是墜毀感',
+    category: 'humor',
+  },
+  {
+    id: 727,
+    text: '我的人生起飛感就是著陸感',
+    category: 'humor',
+  },
+  {
+    id: 728,
+    text: '我的人生升空感就是降落感',
+    category: 'humor',
+  },
+  {
+    id: 729,
+    text: '我的人生翱翔感就是俯衝感',
+    category: 'humor',
+  },
+  {
+    id: 730,
+    text: '我的人生飛翔感就是墜落感',
+    category: 'humor',
+  },
+  {
+    id: 731,
+    text: '我的人生展翅感就是收翅感',
+    category: 'humor',
+  },
+  {
+    id: 732,
+    text: '我的人生自由翱翔感就是被困籠中感',
+    category: 'humor',
+  },
+  {
+    id: 733,
+    text: '人生就像一部電影，我是龍套',
+    category: 'humor',
+  },
+  {
+    id: 734,
+    text: '別人在寫傳奇，我在寫日記',
+    category: 'humor',
+  },
+  {
+    id: 735,
+    text: '成功的人都在往上爬，我在往下挖',
+    category: 'humor',
+  },
+  {
+    id: 736,
+    text: '我不是在混日子，我是在享受生活',
+    category: 'humor',
+  },
+  {
+    id: 737,
+    text: '人生最大的成就就是活著',
+    category: 'humor',
+  },
+  {
+    id: 738,
+    text: '我的目標就是沒有目標',
+    category: 'humor',
+  },
+  {
+    id: 739,
+    text: '我的計畫就是沒有計畫',
+    category: 'humor',
+  },
+  {
+    id: 740,
+    text: '我的夢想就是能睡個好覺',
+    category: 'humor',
+  },
+  {
+    id: 741,
+    text: '我的願望就是不要有願望',
+    category: 'humor',
+  },
+  {
+    id: 742,
+    text: '我的期望就是不要有期望',
+    category: 'humor',
+  },
+  {
+    id: 743,
+    text: '我的希望就是不要有希望',
+    category: 'humor',
+  },
+  {
+    id: 744,
+    text: '我的信念就是沒有信念',
+    category: 'humor',
+  },
+  {
+    id: 745,
+    text: '我的信仰就是沒有信仰',
+    category: 'humor',
+  },
+  {
+    id: 746,
+    text: '我的人生就是第246個金句',
+    category: 'humor',
+  },
+  {
+    id: 747,
+    text: '我的人生就是第247個金句',
+    category: 'humor',
+  },
+  {
+    id: 748,
+    text: '我的人生就是第248個金句',
+    category: 'humor',
+  },
+  {
+    id: 749,
+    text: '我的人生就是第249個金句',
+    category: 'humor',
+  },
+  {
+    id: 750,
+    text: '我的人生就是第250個金句',
+    category: 'humor',
+  },
+  {
+    id: 751,
+    text: '我的人生就是第251個金句',
+    category: 'humor',
+  },
+  {
+    id: 752,
+    text: '我的人生就是第252個金句',
+    category: 'humor',
+  },
+  {
+    id: 753,
+    text: '我的人生就是第253個金句',
+    category: 'humor',
+  },
+  {
+    id: 754,
+    text: '我的人生就是第254個金句',
+    category: 'humor',
+  },
+  {
+    id: 755,
+    text: '我的人生就是第255個金句',
+    category: 'humor',
+  },
+  {
+    id: 756,
+    text: '我的人生就是第256個金句',
+    category: 'humor',
+  },
+  {
+    id: 757,
+    text: '我的人生就是第257個金句',
+    category: 'humor',
+  },
+  {
+    id: 758,
+    text: '我的人生就是第258個金句',
+    category: 'humor',
+  },
+  {
+    id: 759,
+    text: '我的人生就是第259個金句',
+    category: 'humor',
+  },
+  {
+    id: 760,
+    text: '我的人生就是第260個金句',
+    category: 'humor',
+  },
+  {
+    id: 761,
+    text: '我的人生就是第261個金句',
+    category: 'humor',
+  },
+  {
+    id: 762,
+    text: '我的人生就是第262個金句',
+    category: 'humor',
+  },
+  {
+    id: 763,
+    text: '我的人生就是第263個金句',
+    category: 'humor',
+  },
+  {
+    id: 764,
+    text: '我的人生就是第264個金句',
+    category: 'humor',
+  },
+  {
+    id: 765,
+    text: '我的人生就是第265個金句',
+    category: 'humor',
+  },
+  {
+    id: 766,
+    text: '我的人生就是第266個金句',
+    category: 'humor',
+  },
+  {
+    id: 767,
+    text: '我的人生就是第267個金句',
+    category: 'humor',
+  },
+  {
+    id: 768,
+    text: '我的人生就是第268個金句',
+    category: 'humor',
+  },
+  {
+    id: 769,
+    text: '我的人生就是第269個金句',
+    category: 'humor',
+  },
+  {
+    id: 770,
+    text: '我的人生就是第270個金句',
+    category: 'humor',
+  },
+  {
+    id: 771,
+    text: '我的人生就是第271個金句',
+    category: 'humor',
+  },
+  {
+    id: 772,
+    text: '我的人生就是第272個金句',
+    category: 'humor',
+  },
+  {
+    id: 773,
+    text: '我的人生就是第273個金句',
+    category: 'humor',
+  },
+  {
+    id: 774,
+    text: '我的人生就是第274個金句',
+    category: 'humor',
+  },
+  {
+    id: 775,
+    text: '我的人生就是第275個金句',
+    category: 'humor',
+  },
+  {
+    id: 776,
+    text: '我的人生就是第276個金句',
+    category: 'humor',
+  },
+  {
+    id: 777,
+    text: '我的人生就是第277個金句',
+    category: 'humor',
+  },
+  {
+    id: 778,
+    text: '我的人生就是第278個金句',
+    category: 'humor',
+  },
+  {
+    id: 779,
+    text: '我的人生就是第279個金句',
+    category: 'humor',
+  },
+  {
+    id: 780,
+    text: '我的人生就是第280個金句',
+    category: 'humor',
+  },
+  {
+    id: 781,
+    text: '我的人生就是第281個金句',
+    category: 'humor',
+  },
+  {
+    id: 782,
+    text: '我的人生就是第282個金句',
+    category: 'humor',
+  },
+  {
+    id: 783,
+    text: '我的人生就是第283個金句',
+    category: 'humor',
+  },
+  {
+    id: 784,
+    text: '我的人生就是第284個金句',
+    category: 'humor',
+  },
+  {
+    id: 785,
+    text: '我的人生就是第285個金句',
+    category: 'humor',
+  },
+  {
+    id: 786,
+    text: '我的人生就是第286個金句',
+    category: 'humor',
+  },
+  {
+    id: 787,
+    text: '我的人生就是第287個金句',
+    category: 'humor',
+  },
+  {
+    id: 788,
+    text: '我的人生就是第288個金句',
+    category: 'humor',
+  },
+  {
+    id: 789,
+    text: '我的人生就是第289個金句',
+    category: 'humor',
+  },
+  {
+    id: 790,
+    text: '我的人生就是第290個金句',
+    category: 'humor',
+  },
+  {
+    id: 791,
+    text: '我的人生就是第291個金句',
+    category: 'humor',
+  },
+  {
+    id: 792,
+    text: '我的人生就是第292個金句',
+    category: 'humor',
+  },
+  {
+    id: 793,
+    text: '我的人生就是第293個金句',
+    category: 'humor',
+  },
+  {
+    id: 794,
+    text: '我的人生就是第294個金句',
+    category: 'humor',
+  },
+  {
+    id: 795,
+    text: '我的人生就是第295個金句',
+    category: 'humor',
+  },
+  {
+    id: 796,
+    text: '我的人生就是第296個金句',
+    category: 'humor',
+  },
+  {
+    id: 797,
+    text: '我的人生就是第297個金句',
+    category: 'humor',
+  },
+  {
+    id: 798,
+    text: '我的人生就是第298個金句',
+    category: 'humor',
+  },
+  {
+    id: 799,
+    text: '我的人生就是第299個金句',
+    category: 'humor',
+  },
+  {
+    id: 800,
+    text: '我的人生就是第300個金句',
+    category: 'humor',
+  },
 ];
