@@ -1498,4 +1498,64 @@ export const humorQuotes: Quote[] = [
     text: '別人在改變世界，我在改變褲子',
     category: 'humor',
   },
+  {
+    id: 298,
+    text: '那些殺不死我的，拜託你傻認真點',
+    category: 'humor',
+  },
+  {
+    id: 299,
+    text: '人如果沒有夢想，那和無尤無慮有什麼分別呢',
+    category: 'humor',
+  },
+  {
+    id: 300,
+    text: '退一晚步來講，我根本聽不到你在講什麼',
+    category: 'humor',
+  },
+  {
+    id: 301,
+    text: '強者從來不跑怨環境，但我是弱者，我跑怨環境也跑怨強者',
+    category: 'humor',
+  },
+  {
+    id: 302,
+    text: '靠臉吃飯不長久，靠不要臉吃飯天長地舊',
+    category: 'humor',
+  },
+  {
+    id: 303,
+    text: '如果上帝關了你的門，還把窗戶鎖上，那就代表他要開冷棋了',
+    category: 'humor',
+  },
+  {
+    id: 304,
+    text: '如果你惹毛我了，我就毛茸茸的走開',
+    category: 'humor',
+  },
+  {
+    id: 305,
+    text: '退一晚步來講，你今天走了一晚步',
+    category: 'humor',
+  },
+  {
+    id: 306,
+    text: '不要觸碰我的底線，不然我又要再話一條',
+    category: 'humor',
+  },
+  {
+    id: 307,
+    text: '休息是因為走不了更長遠的露',
+    category: 'humor',
+  },
+  {
+    id: 308,
+    text: '蹲得越低，腳越摩',
+    category: 'humor',
+  },
+  {
+    id: 309,
+    text: '天才是百分之一的靈感加百分之九十九的汗水，我是百分百的放棄',
+    category: 'humor',
+  },
 ];
